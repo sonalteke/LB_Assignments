@@ -1,4 +1,4 @@
-package Assignment8;
+package Assignment8and10;
 
 /* 3. Write a program which accept distance in kilometre and convert it into meter. (1
 kilometre = 1000 Meter)

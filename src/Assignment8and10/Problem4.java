@@ -1,4 +1,4 @@
-package Assignment8;
+package Assignment8and10;
 
 /* Write a program which accept temperature in Fahrenheit and convert it into
 celsius. (1 celsius = (Fahrenheit - 32) * (5/9))
