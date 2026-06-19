@@ -1,18 +1,21 @@
 package Assignment14;
-/* Accept N number from user and return frequency of even numbers */
+/* Accept N numbers from user and return difference between frequency of even
+number and odd numbers.*/
 
 import java.util.Scanner;
 
-public class Program1 {
-
-    public static int countEven(int arr[]){
-        int count =0 ;
+public class Program2 {
+    public static int checkOddandEvenDiff(int arr[]){
+        int evenCount =0 ;
+        int oddCount = 0;
         for (int num : arr){
             if (num%2 == 0){
-                count++;
+                evenCount++;
+            } else {
+                oddCount++;
             }
         }
-return count;
+        return evenCount - oddCount;
     }
     public static void main(String[] args) {
         int iSize = 0;
@@ -29,7 +32,7 @@ return count;
             arr[i] = sobj.nextInt();
         }
 
-        int result = countEven(arr);
+        int result = checkOddandEvenDiff(arr);
         System.out.println("frequency of even numbers is: "+result);
         sobj.close();
 

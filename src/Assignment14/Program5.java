@@ -1,18 +1,18 @@
 package Assignment14;
-/* Accept N number from user and return frequency of even numbers */
 
 import java.util.Scanner;
 
-public class Program1 {
-
-    public static int countEven(int arr[]){
-        int count =0 ;
+/* Accept n numbers from users and accept one another number as No, return frequency
+* of No from it.*/
+public class Program5 {
+    public static int checkNoFrequency(int arr[], int no){
+        int count = 0;
         for (int num : arr){
-            if (num%2 == 0){
+            if (num ==  no){
                 count++;
             }
         }
-return count;
+        return count;
     }
     public static void main(String[] args) {
         int iSize = 0;
@@ -29,8 +29,11 @@ return count;
             arr[i] = sobj.nextInt();
         }
 
-        int result = countEven(arr);
-        System.out.println("frequency of even numbers is: "+result);
+        System.out.println("Enter the elements to search:");
+        int no =sobj.nextInt();
+
+        int result = checkNoFrequency(arr, no);
+        System.out.println("No of elements :" +result);
         sobj.close();
 
     }
